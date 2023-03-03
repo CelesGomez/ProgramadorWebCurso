@@ -4,3 +4,5 @@ bananas
 tomates
 lechuga
 zanahoria
+remolacha
+cebolla
