@@ -1,6 +1,3 @@
-manzanas
-naranjas
-bananas
 tomates
 lechuga
 zanahoria
