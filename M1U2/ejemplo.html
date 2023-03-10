@@ -37,10 +37,79 @@
 
     <H2>Ejemplo de imagen</H2>
     <img src="Verduras.jpg" alt="Verduras">
+
+   <svg width="100" heigth="100">
+   <circle cx="50" cy="50" r="40" stroke="green" stroke-wigth="4" fill="red" />
+   </svg>
+
+   <svg width="100" heigth="100">
+   <circle cx="50" cy="50" r="40" stroke="green" stroke-wigth="4" fill="yellow" />
+   </svg>
+
+   <svg width="100" heigth="100">
+    <circle cx="50" cy="50" r="40" stroke="green" stroke-wigth="4" fill="blue" />
+    </svg>
+
+    <h2>Complete el formulario</h2>
+    <form action="" method="">
+        <p>
+            <label for="nom">Nombre</label>
+            <input type="text" name="nombre" />
+        </p>
+        <p>
+            <input type="text" name="apellido" placeholder="apellido" />
+        </p>
+        <p>
+            <label for="pass">Contraseña</label>
+            <input type="password" name="pass" />
+        </p>
+        <label for="sexo">Sexo</label>
+        <ul>
+            <li>
+                <input type="radio" name="sexo" value="hombre">
+                <label>Hombre</label>
+            </li>
+            <li>
+                <input type="radio" name="sexo" value="mujer">
+                <label>Mujer</label>
+            </li>
+        </ul>
+        <label>Hobbies</label>
+        <ul>
+            <li>
+                <input type="checkbox" name="Hobbies[]" value="bailar" id="bailar" />
+                <label for="bailar">Bailar</label>
+            </li>
+            <li>
+                <input type="checkbox" name="Hobbies[]" value="cantar" id="cantar" />
+                <label for="cantar">Cantar</label>
+            </li>
+            <li>
+                <input type="checkbox" name="Hobbies[]" value="nadar" id="nadar" />
+                <label for="nadar">Nadar</label>
+
+            </li>
+            <li>
+                <input type="checkbox" name="Hobbies[]" value="correr" id="correr" />
+                <label for="correr">Correr</label>
+
+            </li>
+        </ul>
+        <p>
+            <label for="titulo">Titulo</label>
+            <select name="titulo">
+                <option value="primario">Primario</option>
+                <option value="secundario">Secundario</option>
+                <option value="terciario">Terciario</option>
+                <option value="universitario">Universitario</option>
+            </select>
+        </p>
+        <p>
+            <input type="submit" value="Enviar" />
+            <input type="reset" value="Borrar" />
+        </p>
+    </form>
     
-
-
-
 
 
 
