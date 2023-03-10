@@ -1,0 +1,72 @@
+h1{
+    color: darkblue;
+    font-family:agency fb;
+    background-color: azure;
+    text-align: center;
+    font-size: 70px;
+}
+p{
+    font-family: agency fb;
+    color: black;
+    font-weight: bolder;
+}
+h2{
+    color:darkblue;
+    font-family: agency fb;
+}
+    .informacion{
+        text-decoration: underline;
+    }
+
+    .respcolor{
+        color:black
+    }
+h3{
+    color:darkblue;
+    font-family: agency fb;
+}
+#box1{
+        color:darkblue;
+        font-weight: bold;
+        font-family: agency fb;
+        font-size: 23px;
+        width: 200px;
+        height: 35px;
+        background-color:lightskyblue;
+        border: 3px solid blue; 
+        text-align: center;
+        padding: 5px;
+        position: relative;
+    }
+h3{
+    font-family: agency fb;
+    background-color: lightgray;
+    width: 50px;
+    height: 20px;
+    text-align: center;
+    color: darkblue;
+
+}
+    h4{
+        font-family: agency fb;
+        color: darkblue;
+    }
+ul{
+    color:black;
+    font-family: agency fb;
+    font-weight: bold;
+    font-size: 17px;
+}
+#box2 { 
+    font-family: agency fb; 
+    width: 350px;
+    height: 30px;
+    font-size: 25px; 
+    font-weight: 100; 
+    color: darkblue; 
+    background-color: aquamarine;
+    padding: 5px;
+    text-align: center;
+    border-radius: 70px;
+    position: relative;
+}
