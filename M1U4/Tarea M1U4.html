@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
+    <title>M1U4</title>
+</head>
+<body>
+    <script>
+    const metros = prompt('ingrese metros')
+
+    if (metros >= 100000) {
+        document.write (`avion`);
+
+    } else if (metros >= 0 || metros <= 1000) {
+        document.write(`pie`);   
+
+    } else if (metros >= 1001 || metros <= 10000) {
+        document.write(`bicicleta`);
+
+    } else if (metros >=10001 || metros <= 30000) {
+        document.write(`colectivo`);
+
+    } else if (metros >=30001 || metros <= 100000) {
+        document.write(`auto`);
+    }
+
+        
+    </script>
+
+
+</body>
+</html>
