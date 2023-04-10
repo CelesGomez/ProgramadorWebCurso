@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="ejercicio 1" content="width=device-width, initial-scale=1.0">
+        <title>Tarea M2U1 EJ1</title>
+    
+        <script type="text/javascript">
+
+            function cambiaFondo(x) {
+                console.log(x.value);
+
+                var body = document.getElementById("body");
+                body.style.backgroundColor = x.value;
+            }
+
+        </script>
+
+    </head>
+
+    <body id="body">
+
+        <select name="fondo" id="fondo" onchange="cambiaFondo(this)">
+            <option value="red">Rojo</option>   
+            <option value="green">Verde</option> 
+            <option value="blue">Azul</option>  
+            
+    </select>   
+
+    </body>
+</html>
