@@ -22,7 +22,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/productos', productosRouter);
-app.use('/contactoproductos', productosRouter);
+app.use('/contacto', contactoRouter);
 
 app.get('/home', function (req,res) {
   res.send('Hola soy la pagina de prueba')
@@ -30,6 +30,14 @@ app.get('/home', function (req,res) {
 
 app.get('/nosotros', function (req,res) {
   res.render('nosotros')
+})
+
+app.get('/ruta2', function (req,res) {
+  res.send('Hola soy la pagina de prueba')
+})
+
+app.get('/ruta 3', function (req,res) {
+  res.send('Hola soy la pagina de prueba')
 })
 
 // catch 404 and forward to error handler
