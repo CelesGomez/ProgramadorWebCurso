@@ -5,7 +5,8 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var productosRouter = require('./routes/productos');
+var contactoRouter = require('./routes/contacto');
 
 var app = express();
 
@@ -20,7 +21,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/productos', productosRouter);
+app.use('/contactoproductos', productosRouter);
 
 app.get('/home', function (req,res) {
   res.send('Hola soy la pagina de prueba')
@@ -28,14 +30,6 @@ app.get('/home', function (req,res) {
 
 app.get('/nosotros', function (req,res) {
   res.render('nosotros')
-})
-
-app.get('/productos', function (req,res) {
-  res.send('Hola soy la pagina de prueba')
-})
-
-app.get('/contacto', function (req,res) {
-  res.send('Hola soy la pagina de prueba')
 })
 
 // catch 404 and forward to error handler
