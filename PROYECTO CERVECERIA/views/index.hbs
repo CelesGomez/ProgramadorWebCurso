@@ -1,2 +1,217 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<div class="container-fluid">
+    <div id="Home" class="row align-items-center hero scroll_section">
+        <p>Bajada</p>
+        <h1>Titulo Principal</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae quae, deleniti tempore explicabo
+            atque pariatur illo, sequi in voluptates nihil facilis animi consectetur ut facere eos veritatis nobis,
+            sit fugiat.</p>
+    </div>
+</div>
+<div class="row my-3">
+    <div id="novedades" class="col-md-5 offset-md-2 py-3 scroll_section">
+        <h2>Novedades></h2>
+        <ul class="lista-novedades">
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="images/novedades01.jpg">
+                    Nuevas recetas 1</a></li>
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="images/novedades01.jpg">
+                    Nuevas recetas 2</a></li>
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="images/novedades01.jpg">
+                    Nuevas recetas 3</a></li>
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="images/novedades01.jpg">
+                    Nuevas recetas 4</a></li>
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="images/novedades01.jpg">
+                    Nuevas recetas 5</a></li>
+        </ul>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="exampleModalLabel">Nuevas recetas 1</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h3>Lager</h3>
+                    <p>Incluyendo Pilsner, esta es la cerveza más popular del mundo. Originarias de Alemania, las
+                        lager se almacenan generalmente a temperaturas muy frías durante períodos más prolongados,
+                        lo que les confiere un acabado suave y crujiente. Si bien el color y la sensación en la boca
+                        pueden variar enormemente, la gran mayoría son de color amarillo pálido / dorado con una
+                        alta carbonatación y una intensidad de lúpulo media.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalLabel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="exampleModalLabel">Nuevas recetas 2</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h3>Ale</h3>
+                    <p>Enaltecida por las cervecerías inglesas durante muchas décadas, estas son generalmente más
+                        robustas y complejas. Ofrecen sabores afrutados, nueces y notas malteadas. Elaboradas con
+                        levadura de fermentación superior, a temperatura de bodega, las cervezas suelen ser de color
+                        marrón o rojizo y tienen un cuerpo completo y son más sazonadas que las lager.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 my-3">
+        <div class="rounded py-5 testimonios">
+            <h2 class="text-center">Testimonios</h2>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="testimonio">
+                            <h5>"La mejor birra del mundo!!"</h5>
+                            <p>Francisco, Monte Grande</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonio">
+                            <h5>"La mejor birra del mundo 2!!"</h5>
+                            <p>Flavia, Villa Devoto</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonio">
+                            <h5>"La mejor birra del mundo 3!!"</h5>
+                            <p>Eric, Mataderos</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="historia" class="row align-items-center py-4">
+        <div class="col-lg-2 col-md-3 offset-lg-2 d-none d-sm-block">
+            <img src="images/historia_1.jpg" alt="historia 1" class="img-fluid">
+        </div>
+        <div class="col-lg-2 col-md-3 d-none d-sm-block">
+            <img src="images/historia_2.jpg" alt="historia 2" class="img-fluid">
+        </div>
+        <div class="col-12 d-sm-none">
+            <img src="images/historia_3.jpg" alt="historia 3" class="img-fluid">
+        </div>
+        <div class="col-lg-4 col-md-6 mt-4 mt-sm-0">
+            <h2>Historia</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta modi sint veritatis impedit ad
+                mollitia cumque unde illo perferendis. Voluptatem, suscipit inventore? Minus error quo veniam sunt
+                aperiam, accusamus dolorum.</p>
+
+        </div>
+    </div>
+</div>
+<div id="nosotros" class="row align-items-stretch my-3 staff py-4 scroll_section">
+    <div class="col-lg-8 offset-lg-2">
+        <h2>Nosotros</h2>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="images/nosotros01.jpg" class="card-img-top" alt="Diana Reyes">
+                    <div class="card-body">
+                        <h5 class="card-title">Diana Reyes</h5>
+                        <p class="card-text">This is a long card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="images/nosotros02.jpg" class="card-img-top" alt="Juan Gomez">
+                    <div class="card-body">
+                        <h5 class="card-title">Juan Gomez</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur,
+                            sed labore illum incidunt quidem beatae porro ab alias aspernatur nihil voluptate
+                            sit deserunt fugiat, reiciendis accusantium? Natus fuga nobis tempora.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="images/nosotros03.jpg" class="card-img-top" alt="Roberto Zavala">
+                    <div class="card-body">
+                        <h5 class="card-title">Roberto Zavala</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur,
+                            sed labore illum incidunt quidem beatae porro ab alias aspernatur nihil voluptate
+                            sit deserunt fugiat, reiciendis accusantium? Natus fuga nobis tempora.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/nosotros04.jpg" class="card-img-top" alt="Luciano Figuero">
+                    <div class="card-body">
+                        <h5 class="card-title">Luciano Figuero</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur,
+                            sed labore illum incidunt quidem beatae porro ab alias aspernatur nihil voluptate
+                            sit deserunt fugiat, reiciendis accusantium? Natus fuga nobis tempora.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="conocenos" class="row py-4 scroll_section">
+    <div class="col-md-4 offset-md-2">
+        <h2>Visitanos</h2>
+        <div class="mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.219234290193!2d-58.4226825243724!3d-34.598617372956134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca62d4cf1563%3A0x686de505d84c67e6!2sAv.%20Medrano%20951%2C%20C1179AAQ%20CABA!5e0!3m2!1ses-419!2sar!4v1686756899684!5m2!1ses-419!2sar"></iframe>
+        </div>
+    </div>
+    <div class="col-md-4 mt-4 mt-sm-0">
+        <h2>Contactanos</h2>
+        <form class="row g-3" action="/" method="post">
+            <div class="col-md-6">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre">
+            </div>
+            <div class="col-md-6">
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="apellido" name="apellido">
+            </div>
+            <div class="col-12">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="email@email.com" name="email">
+            </div>
+            <div class="col-12">
+                <label for="tel" class="form-label">Tel</label>
+                <input type="text" class="form-control" id="tel" placeholder="..." name="tel">
+            </div>
+            <div class="col-12">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="3" name="mensaje">
+                </textarea>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+        </form>
+        <p>{{message}}</p>
+    </div>
+</div>
