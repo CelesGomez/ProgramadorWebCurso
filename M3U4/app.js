@@ -53,6 +53,26 @@ app.get('/salir', function (req, res){
  res.redirect('/');
 });
 
+app.use(function(req, res, next) {
+  if (!req.session.vistas) {
+    req.session.vistas = {};
+  }
+
+  if (!req.session.vistas[req.originalUrl]) {
+    req.session.vistas[req.originalUrl] = 1;
+  } else {
+    req.session.vistas[req.originalUrl]++;
+    }
+    next();
+});
+
+app.get('/pag1', function(req, res) {
+  res.render('pagina', {
+    nombre: 'pag1',
+    vistas: req.session.vistas[req.originalUrl]
+  });
+});
+
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   next(createError(404));
