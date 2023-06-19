@@ -26,12 +26,12 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
 
-//pool.query('select* from empleados').then(function (resultados){
-//  console.log(resultados)
-//});
+// pool.query('select* from empleados').then(function (resultados) {
+//   console.log(resultados)
+// });
 
 // var obj = {
-//   nombre: 'Juan1',
+//   nombre: 'Juan12',
 //   apellido: 'Lopez',
 //   trabajo: 'Docente',
 //   edad: 38,
@@ -49,18 +49,23 @@ app.use('/users', usersRouter);
 //   apellido: 'Gomez',
 // }
 
-// pool.query('update empleados set? where id_emp=?', [obj,id]).then(function(resultados) {
+// pool.query('update empleados set? where id=?', [obj, id]).then(function (resultados) {
+//   console.log(resultados);
+// });
+
+// var id = 25;
+// pool.query('delete from empleados where id=?', [id]),then(function (resultados) {
 //   console.log(resultados);
 // });
 
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   next(createError(404));
 });
 
 // error handler
-app.use(function(err, req, res, next) {
+app.use(function (err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
