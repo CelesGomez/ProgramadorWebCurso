@@ -54,7 +54,7 @@ app.use('/users', usersRouter);
 // });
 
 // var id = 25;
-// pool.query('delete from empleados where id=?', [id]),then(function (resultados) {
+// pool.query('delete from empleados where id=?', [id]).then(function (resultados) {
 //   console.log(resultados);
 // });
 
