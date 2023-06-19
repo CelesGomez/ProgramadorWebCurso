@@ -23,18 +23,18 @@ router.post('/', async (req, res, next) => {
     html: nombre + " " + apellido + " se contacto a traves de la web y quiere mas info a este correo: " + email + ". <br> Ademas, hizo el siguiente comentario: " + mensaje + ". <br> Su tel es " + telefono
   }
 
-  var transporter = nodemailer.createTransport({
+  var transport = nodemailer.createTransport({
     host: process.env.SMTP_HOST,
     port: process.env.SMTP_PORT,
     auth: {
       user: process.env.SMTP_USER,
       pass: process.env.SMTP_PASS
     }
-  })
+  });
 
-  var info = await transporter.sendMail(obj);
+  var info = await transport.sendMail(obj);
 
-  res.render('/', {
+  res.render('index', {
     message: 'Mensaje enviado correctamente',
   });
 
