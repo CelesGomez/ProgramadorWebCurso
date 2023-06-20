@@ -9,57 +9,34 @@
 </div>
 <div class="row my-3">
     <div id="novedades" class="col-md-5 offset-md-2 py-3 scroll_section">
-        <h2>Novedades></h2>
+        <h2>Novedades</h2>
         <ul class="lista-novedades">
-            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="images/novedades01.jpg">
-                    Nuevas recetas 1</a></li>
-            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="images/novedades01.jpg">
-                    Nuevas recetas 2</a></li>
-            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="images/novedades01.jpg">
-                    Nuevas recetas 3</a></li>
-            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="images/novedades01.jpg">
-                    Nuevas recetas 4</a></li>
-            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="images/novedades01.jpg">
-                    Nuevas recetas 5</a></li>
+            {{#each novedades}}
+            <li>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modal{{id}}"><img
+                        src="images/novedades01.jpg">{{titulo}}</a>
+            </li>
+            {{/each}}
         </ul>
     </div>
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    {{#each novedades}}
+    <div class="modal fade" id="modal{{id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2 class="modal-title fs-5" id="exampleModalLabel">Nuevas recetas 1</h2>
+                    <h2 class="modal-title fs-5" id="exampleModalLabel">{{titulo}}</h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <h3>Lager</h3>
-                    <p>Incluyendo Pilsner, esta es la cerveza más popular del mundo. Originarias de Alemania, las
-                        lager se almacenan generalmente a temperaturas muy frías durante períodos más prolongados,
-                        lo que les confiere un acabado suave y crujiente. Si bien el color y la sensación en la boca
-                        pueden variar enormemente, la gran mayoría son de color amarillo pálido / dorado con una
-                        alta carbonatación y una intensidad de lúpulo media.</p>
+                    <h3>{{subtitulo}}</h3>
+                    <p>{{cuerpo}}</p>
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="modal fade" id="exampleModalLabel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2 class="modal-title fs-5" id="exampleModalLabel">Nuevas recetas 2</h2>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <h3>Ale</h3>
-                    <p>Enaltecida por las cervecerías inglesas durante muchas décadas, estas son generalmente más
-                        robustas y complejas. Ofrecen sabores afrutados, nueces y notas malteadas. Elaboradas con
-                        levadura de fermentación superior, a temperatura de bodega, las cervezas suelen ser de color
-                        marrón o rojizo y tienen un cuerpo completo y son más sazonadas que las lager.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    {{/each}}
+    
     <div class="col-md-3 my-3">
         <div class="rounded py-5 testimonios">
             <h2 class="text-center">Testimonios</h2>
