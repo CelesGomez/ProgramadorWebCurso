@@ -6,21 +6,21 @@
                 <input type="hidden" value="{{novedades.id}}" name="id">
                 <div class="form-group">
                     <label for="">Titulo</label>
-                    <input type="text" class="form-control" name="titulo" value="{{novedades.titulo}}">
+                    <input type="text" class="form-control" name="titulo" value="{{novedad.titulo}}">
                 </div>
                 <div class="form-group">
                     <label for="">Subtitulo</label>
-                    <input type="text" class="form-control" name="titulo" value="{{novedades.subtitulo}}">
+                    <input type="text" class="form-control" name="subtitulo" value="{{novedad.subtitulo}}">
                 </div>
                 <div class="form-group">
                     <label for="">Cuerpo</label>
-                    <textarea name="cuerpo" class="form-control">{{novedad.cuerpo}}</textarea>
+                    <textarea placeholder="cuerpo" name="cuerpo" class="form-control">{{novedad.cuerpo}}</textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Modificar</button>
             </form>
-            {{!-- {{#if error}}
-                <p>{{message}}</p>
-            {{/if}} --}}
+            {{#if error}}
+            <p>{{message}}</p>
+            {{/if}}
         </div>
     </div>
 </div>
