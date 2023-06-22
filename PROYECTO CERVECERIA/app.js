@@ -32,8 +32,8 @@ app.use(session({
 
 secured = async(req, res, next) => {
   try {
-    console.log(req.session.id.usuario);
-    if(req.session.id.usuario){
+    console.log(req.session.id_usuario);
+    if(req.session.id_usuario) {
       next();
     } else {
       res.redirect('/admin/login');
@@ -46,7 +46,7 @@ secured = async(req, res, next) => {
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/admin/login', loginRouter);
-app.use('/admin/novedades', adminRouter);   // le saque el secured
+app.use('/admin/novedades', secured, adminRouter);   // le saque el secured
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
