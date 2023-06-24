@@ -46,7 +46,7 @@ secured = async(req, res, next) => {
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/admin/login', loginRouter);
-app.use('/admin/novedades', secured, adminRouter);   // le saque el secured
+app.use('/admin/novedades', secured, adminRouter); 
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

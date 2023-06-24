@@ -30,7 +30,7 @@ router.post('/agregar', async (req, res, next) => {
         if (req.body.titulo != "" && req.body.subtitulo != "" && req.body.cuerpo != "") {
             console.log(req.body)
             await novedadesModel.insertNovedad(req.body);
-            res.direct('/admin/novedades')
+            res.redirect('/admin/novedades')
         } else {
             res.render('admin/agregar', {
                 layout: 'admin/layout',
